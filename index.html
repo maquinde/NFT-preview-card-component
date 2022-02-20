@@ -8,22 +8,37 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>NFT preview card component</title>
-
 </head>
 
 <body>
+  <main>
+    <article class="card-container">
 
-  Equilibrium #3429
+      <div class="card">
+        <div class="image-container">
+          <img src="images/image-equilibrium.jpg" alt="Image of NFT">
+        </div>
 
-  Our Equilibrium collection promotes balance and calm.
+        <div class="text-container">
+          <h1>Equilibrium #3429</h1>
+          <p>Our Equilibrium collection promotes balance and calm.</p>
+        </div>
 
-  0.041 ETH
-  3 days left
+        <div class="price-container">
+          <h2><i class="fa-brands fa-ethereum"></i> 0.041 ETH</h2>
+          <p><i class="fa-solid fa-clock"></i> 4 days left</p>
+        </div>
+        <hr>
+        <div class="creator-container">
+          <img src="images/image-avatar.png" alt="Image of creator">
+          <p>Creation of <span>Jules Wyvern</span></p>
+        </div>
+      </div>
 
-  Creation of Jules Wyvern
-
+    </article>
+  </main>
   <script src="js/main.js"></script>
 </body>
 
