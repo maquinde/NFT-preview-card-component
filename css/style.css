@@ -17,6 +17,25 @@ body {
     font-family: 'Outfit', sans-serif;
 }
 
+/* Multiple elements */
+.price-container h2, 
+.price-container p,
+.creator-container img,
+.creator-container p {
+    display: inline;
+}
+
+/* Multiple classes */
+.text-container,
+.price-container,
+.line-container,
+.creator-container {
+    width: 302px;
+    margin: auto;
+}
+
+
+/* Card container position */
 .card-container {
     display: flex;
     justify-content: center;
@@ -25,25 +44,96 @@ body {
 }
 
 
+/* Card */
+.card {
+    width: 350px;
+    height: 596px;
+    border-radius: 10px;
+    background-color: var(--very-dark-blue-card);
+}
 
+
+/* Image container */
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    width: 302px;
+    height: 302px;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+
+
+/* Text container */
 .text-container h1 {
     color: var(--white);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
 }
 
 .text-container p {
     color: var(--soft-blue);
     font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
 }
 
 
+/* Price container */
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    margin-bottom: 25px;
+}
+
+.price-container h2 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--cyan);
+}
+
+.price-container p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--soft-blue);
+}
 
 
+/* Creator container */
+.creator-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-top: 1px solid var(--very-dark-blue-line);
+    padding-top: 10px;
+}
 
-.price-container h2, 
-.price-container p,
-.creator-container img,
+.creator-container img {
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+}
+
 .creator-container p {
-    display: inline;
-    /* possibly use flex? */
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--soft-blue);
 }
+
+.creator-container p span {
+    color: var(--white);
+}
+
+
+
 
