@@ -12,6 +12,12 @@
     --white: hsl(0, 0%, 100%);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--very-dark-blue-main);
     font-family: 'Outfit', sans-serif;
@@ -74,10 +80,9 @@ body {
     bottom: 4px;
     left: 25px;
     width: 302px;
-    height: 302px;
+    /* height: 302px; <---TESTING Removal of height */
     border-radius: 8px;
     background-color: rgba(0, 255, 255, 0.7);
-    /* opacity: .6; */
 }
 
 
@@ -113,7 +118,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 20px;
+    /* height: 20px; <---TESTING Removal of height*/
     margin-bottom: 25px;
 }
 
@@ -145,7 +150,7 @@ body {
     border: 1px solid var(--white);
     border-radius: 50%;
     width: 33px;
-    height: 33px;
+    /* height: 33px; <---TESTING Removal of height*/
 }
 
 .creator-container p {
