@@ -75,7 +75,6 @@ body {
 
 /* Image container overlay */
 .overlay {
-    /* display: block; */
     position: absolute;
     bottom: 4px;
     left: 25px;
@@ -90,7 +89,6 @@ body {
 
 /* Image container eye */
 .eye {
-    /* display: none; */
     position: absolute;
     top: 130px;
     right: 130px;
@@ -101,9 +99,13 @@ body {
 
 
 /* Text container */
+.text-container{
+    margin-top: 20px;
+}
+
 .text-container h1 {
     color: var(--white);
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 600;
     line-height: 28px;
     transition: color 500ms;
@@ -122,8 +124,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* height: 20px; <---TESTING Removal of height*/
-    margin-bottom: 25px;
+    margin: 25px;
 }
 
 .price-container h2 {
@@ -140,6 +141,10 @@ body {
     color: var(--soft-blue);
 }
 
+.price-container i {
+    margin-right: 5px;
+}
+
 
 /* Creator container */
 .creator-container {
@@ -147,14 +152,13 @@ body {
     justify-content: left;
     align-items: center;
     border-top: 1px solid var(--very-dark-blue-line);
-    padding-top: 10px;
+    padding: 15px 20px 20px 0px;
 }
 
 .creator-container img {
     border: 1px solid var(--white);
     border-radius: 50%;
     width: 33px;
-    /* height: 33px; <---TESTING Removal of height*/
 }
 
 .creator-container p {
@@ -186,35 +190,3 @@ body {
     color: var(--cyan);
     cursor: pointer;
 }
-
-
-
-/* FEEDBACK */
-
-/* @denielden */
-/* try to add a little transition on the element with hover effect
-instead of using px try to use relative units of measurement -> read here */
-
-
-/* @PhoenixDev22 */
-/* Anything with a hover style in design means it's interactive. you need to add an interactive element<a> around the image Equilibrium #3429 and Jules Wyvern .
-
-The avatar 's alt shouldn't be Image of creator , it's meaningless , you can set Jules Wyvern to it.
-
-Read more how to write an alt text
-
-the link should be wrapping the main image and either have Sr-only text, an aria-label or alt text that says where that link takes you.
-
-You can use an unordered list<ul> to wrap `class="price-container" <li>, there would be <img > and<p> .
-
-It's good practice to use a css reset at the start of css every time. That would do things like change images to display block instead of inline block.
-
-width: 350px; an explicit width is not a good way . Remove the width from the main component and change it to max width instead. That will let it shrink a little when it needs to.
-
-height: 596px;Also you would never want to set the height of the element. Let the content inside the card element dictate the height of it.
-
-You should use em and rem units .Both em and rem are flexible, Using px won't allow the user to control the font size based on their needs.
-
-Never use px for font size.
-
-General point , try to put classes directly on anything you want to style. */
